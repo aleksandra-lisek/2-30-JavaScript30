@@ -32,7 +32,9 @@ background-size:98px 98.9px;
 .clock {
     width: 25rem;
     height: 25rem;
-    background-color: white;
+    background: url("../clock.svg")no-repeat center;
+    background-color: #fafafa;
+    background-size: 88%;
     border: 0.5rem solid black;
     border-radius: 100%;
     position: relative;
@@ -44,7 +46,7 @@ background-size:98px 98.9px;
     position: absolute;
     width: 2rem;
     height: 2rem;
-    background-color: black;
+     background: radial-gradient(ellipse 20px 15px at 50% 0, #ececec 40%, #5c5c5c 80%);
     border-radius: 100%;
     bottom: 11.5rem;
     left: 11.5rem;
@@ -58,7 +60,6 @@ background-size:98px 98.9px;
     z-index: 6;
     box-shadow: 4px -4px 10px 0 rgba(0,0,0,.4);
     transform-origin: 50% 100%;
-    transform: rotate(0deg);
 }
 
 .hours {
@@ -92,7 +93,7 @@ background-size:98px 98.9px;
     left: 12rem;
     z-index: 5;
     transform-origin: 50% 100%;
-    transform: rotate(0deg);
+
 }
 
 .minutes {
@@ -120,7 +121,7 @@ background-size:98px 98.9px;
     left: 12.25rem;
     z-index: 4;
     transform-origin: 20% 80%;
-    transform: rotate(0deg);
+
 }
 
 .seconds {
