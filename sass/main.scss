@@ -46,7 +46,7 @@ background-size:98px 98.9px;
     position: absolute;
     width: 2rem;
     height: 2rem;
-     background: radial-gradient(ellipse 20px 15px at 50% 0, #ececec 40%, #5c5c5c 80%);
+     background: black;
     border-radius: 100%;
     bottom: 11.5rem;
     left: 11.5rem;
@@ -56,25 +56,20 @@ background-size:98px 98.9px;
 .hours-container {
     position: absolute;
     bottom: 12.75rem;
-    left: 11.75rem;
+    left: 11.79rem;
     z-index: 6;
     box-shadow: 4px -4px 10px 0 rgba(0,0,0,.4);
-    transform-origin: 50% 100%;
+    transform-origin: 50% 105%;
 }
 
 .hours {
     width: 1.5rem;
     height: 6rem;
-    background-color: #000000;
+    background-color: black;
     position: relative;
-    /*box-shadow: 4px -4px 10px 0 rgba(0,0,0,.4);
-    transform-origin: 50% 100%;
-        transform: rotate(18deg);
-        transition: all 0.5s;*/
-    /*transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);*/
 }
 
-.hours:before {
+.hours-container:before {
     content: '';
     position: absolute;
     width: 0;
@@ -83,8 +78,8 @@ background-size:98px 98.9px;
     border-right: 1rem solid transparent;
     border-bottom: 1.5rem solid #000000;
     bottom: 98%;
-    left: -12%;
-    /*margin: 40px auto 0;*/
+    left: -14%;
+
 }
 
 .minutes-container {
@@ -99,7 +94,7 @@ background-size:98px 98.9px;
 .minutes {
     width: 1rem;
     height: 8.5rem;
-    background-color: #C71585;
+    background-color: black;
     position: relative;
 }
 
@@ -110,9 +105,9 @@ background-size:98px 98.9px;
     height: 0;
     border-left: 0.8rem solid transparent;
     border-right: 0.8rem solid transparent;
-    border-bottom: 1.5rem solid #C71585;
+    border-bottom: 1.5rem solid black;
     bottom: 98%;
-    left: -20%;
+    left: -30%;
 }
 
 .seconds-container {
@@ -140,5 +135,5 @@ background-size:98px 98.9px;
     border-right: 0.5rem solid transparent;
     border-bottom: 1.2rem solid #FF0000;
     bottom: 98%;
-    left: -21%;
+    left: -31%;
 }

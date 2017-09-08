@@ -72,27 +72,26 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-   function clock() {
-      var date = new Date();
-      var seconds = date.getSeconds();
-      var minutes = date.getMinutes();
-      var hours = date.getHours();
-      //    const day = date.getDate();
-      var hh = document.querySelector('.hours-container');
-      var mm = document.querySelector('.minutes-container');
-      var ss = document.querySelector('.seconds-container');
+    function clock() {
+        var date = new Date();
+        var seconds = date.getSeconds();
+        var minutes = date.getMinutes();
+        var hours = date.getHours();
 
-      var secAngle = seconds * 6;
-      var minAngle = minutes * 6 + seconds * (360 / 3600);
-      var hourAngle = hours * 30 + minutes * (360 / 720);
+        var hh = document.querySelector('.hours-container');
+        var mm = document.querySelector('.minutes-container');
+        var ss = document.querySelector('.seconds-container');
 
-      ss.style.transform = 'rotate(' + secAngle + 'deg)';
-      mm.style.transform = 'rotate(' + minAngle + 'deg)';
-      hh.style.transform = 'rotate(' + hourAngle + 'deg)';
-      // $('.date').text(day);
-   }
+        var secAngle = seconds * 6;
+        var minAngle = minutes * 6 + seconds * (360 / 3600);
+        var hourAngle = hours * 30 + minutes * (360 / 720);
 
-   setInterval(clock, 100);
+        ss.style.transform = 'rotate(' + secAngle + 'deg)';
+        mm.style.transform = 'rotate(' + minAngle + 'deg)';
+        hh.style.transform = 'rotate(' + hourAngle + 'deg)';
+    }
+
+    setInterval(clock, 100);
 });
 
 /***/ })
